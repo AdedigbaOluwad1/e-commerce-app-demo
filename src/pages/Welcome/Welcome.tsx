@@ -1,5 +1,5 @@
 import Meta from '@/components/Meta';
-import { Container } from '@mui/material';
+import { Container, Button, Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function Welcome() {
@@ -7,9 +7,10 @@ function Welcome() {
     <>
       <Meta title="Welcome" />
       <Container>
-        <div className='flex'>
-          
-        </div>
+        <Typography variant='h1'>Hello there</Typography>
+        <Button variant='contained' color='primary' size='large'>
+          Hey
+        </Button>
       </Container>
     </>
   );
