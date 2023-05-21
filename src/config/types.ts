@@ -1,7 +1,7 @@
-import type { SnackbarProps } from 'notistack';
+// import type { SnackbarProps, SnackbarContentProps } from 'notistack';
 
 type Notifications = {
-  options: SnackbarProps;
+  options: any;
   maxSnack: number;
 };
 
