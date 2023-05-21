@@ -23,11 +23,15 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.10.6",
     "@mui/lab": "5.0.0-alpha.100",
     "@mui/material": "^5.10.6",
     "@mui/system": "^5.10.6",
     "@mui/utils": "^5.10.6",
+    "bootstrap-icons": "^1.10.5",
     "is-mobile": "^3.1.1",
     "mui": "^0.0.1",
     "notistack": "^2.0.5",
@@ -38,7 +42,9 @@
     "react-hotkeys-hook": "^3.4.7",
     "react-router-dom": "^6.4.1",
     "recoil": "^0.7.5",
-    "tailwind": "^4.0.0"
+    "tailwind": "^4.0.0",
+    "typeface-manrope": "^1.0.0",
+    "typeface-roboto": "^1.1.13"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
