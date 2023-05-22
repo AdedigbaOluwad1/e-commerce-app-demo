@@ -17,6 +17,7 @@ import 'typeface-manrope';
 import 'typeface-roboto';
 import 'typeface-open-sans';
 import 'typeface-nunito'
+import { borderColor } from '@mui/system';
 
 
 const SearchBox = styled(InputBase)(({ theme }) => ({

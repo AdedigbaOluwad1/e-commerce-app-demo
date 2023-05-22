@@ -15,9 +15,23 @@ const theme = createTheme({
     primary: {
       main: "#1e4aaf",
     }
+  },
+  components: {
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          borderRadius: '10px',
+          border: '1px solid green',
+          outline: 'none',
+          boxShadow: 'none',
+          '&:focus': {
+            outline: '2px'
+          }
+        },
+      },
+    },
   }
-  }
-)
+})
 function render(App: ComponentType) {
   root.render(
     <StrictMode>
