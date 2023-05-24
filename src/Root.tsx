@@ -21,7 +21,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: '10px',
-          border: '1px solid green',
+          border: '1px solid rgba(227, 225, 236, 1)',
           outline: 'none',
           boxShadow: 'none',
           '&:focus': {
