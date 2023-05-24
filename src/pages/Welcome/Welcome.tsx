@@ -20,18 +20,21 @@ import 'typeface-nunito'
 import { borderColor } from '@mui/system';
 
 
-const SearchBox = styled(InputBase)(({ theme }) => ({
-  '& .MuiInputBase-input': {
-    borderRadius: 10,
-    height: '48px',
-    padding: '2px 45px 2px 15px',
-    fontSize: '16px',
-    color: '#949dab',
-    fontFamily: 'Nunito',
-    tranition: 'all 5s ease',
-    fontWeight: 500,
-    borderColor: 'rgba(227, 225, 236, 1)'
+const SearchBox = styled(TextField)(({ theme }) => ({
+  "& label.Mui-focused": {
+    color: "green"
   },
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: "red"
+    },
+    "&:hover fieldset": {
+      borderColor: "yellow"
+    },
+    "&.Mui-focused fieldset": {
+      borderColor: "green"
+    }
+  }
 }))
 
 const Buttons = styled(Button)({
@@ -49,7 +52,7 @@ function Welcome() {
           <IconButton size='small' disableRipple sx={{width: '35px', height: '48px', p: 0, background: '#fff', borderRadius: '10px'}}>
             <FontAwesomeIcon size="1x" color='black' icon={faChevronLeft} />
           </IconButton>
-          <SearchBox endAdornment={<IconButton size='small' disableRipple sx={{position: 'absolute', right: 8,}}><FontAwesomeIcon icon={faMagnifyingGlass} color='#949dab'/></IconButton>} fullWidth placeholder='Search for a product or cate...' sx={{height: '48px'}} />
+          <SearchBox fullWidth placeholder='Search for a product or cate...' sx={{height: '48px', }} />
         </Stack>
           <Stack direction={'row'} gap={4} height={'40px'} width={'100%'}>
             <Buttons variant='outlined' sx={{height: '100%', minWidth: '40px',}}></Buttons>
