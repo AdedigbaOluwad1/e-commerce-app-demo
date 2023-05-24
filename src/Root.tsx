@@ -13,24 +13,12 @@ const root = createRoot(container);
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#1e4aaf",
+      main: "#38c6a5",
+    },
+    neutral: {
+      main: "rgba(198, 198, 198, 1)"
     }
   },
-  components: {
-    MuiInputBase: {
-      styleOverrides: {
-        root: {
-          borderRadius: '10px',
-          border: '1px solid rgba(227, 225, 236, 1)',
-          outline: 'none',
-          boxShadow: 'none',
-          '&:focus': {
-            outline: '2px'
-          }
-        },
-      },
-    },
-  }
 })
 function render(App: ComponentType) {
   root.render(
