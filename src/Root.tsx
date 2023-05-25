@@ -6,6 +6,7 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import { borderColor, spacing } from '@mui/system';
 import { dark, light } from '@mui/material/styles/createPalette';
 import 'typeface-roboto'
+import '@/main.css'
 // import ThemeProvider from '@/theme/Provider';
 
 const container = document.getElementById('root') as HTMLElement;

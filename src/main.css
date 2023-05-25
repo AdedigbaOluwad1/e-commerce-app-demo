@@ -521,3 +521,13 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.scrollBarHidden::-webkit-scrollbar{
+  width: 0;
+}
+
+.scrollBarHidden{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  
+}
