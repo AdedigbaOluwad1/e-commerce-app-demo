@@ -4,7 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { RecoilRoot } from 'recoil';
 import { ThemeProvider, createTheme } from '@mui/material';
 import { borderColor, spacing } from '@mui/system';
-import { dark } from '@mui/material/styles/createPalette';
+import { dark, light } from '@mui/material/styles/createPalette';
 import 'typeface-roboto'
 // import ThemeProvider from '@/theme/Provider';
 
@@ -16,7 +16,8 @@ const theme = createTheme({
       main: "#38c6a5",
     },
     neutral: {
-      main: "rgba(198, 198, 198, 1)"
+      main: "rgba(198, 198, 198, 1)",
+      light: "#f8faf9"
     }
   },
 })

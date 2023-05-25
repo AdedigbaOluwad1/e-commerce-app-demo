@@ -1,6 +1,13 @@
 import Meta from '@/components/Meta';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { 
+  faChevronLeft, 
+  faMagnifyingGlass,
+  faSliders
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  
+} from '@mui/material/colors';
 import {styled} from '@mui/material/styles'
 import { 
   Button,
@@ -16,6 +23,7 @@ import 'typeface-roboto';
 import 'typeface-open-sans';
 import 'typeface-nunito';
 import 'typeface-dm-sans'
+import { borderColor } from '@mui/system';
 
 const SearchBox = styled(TextField)(({ theme }) => ({
   "& label.Mui-focused": {
@@ -26,6 +34,9 @@ const SearchBox = styled(TextField)(({ theme }) => ({
     border: 'none',
     fontSize: 16,
     height: 48,
+    borderRadius: 10,
+    background: theme.palette.neutral.light,
+    color: '#939aa7',
     "& fieldset": {
       borderColor: theme.palette.neutral.main,
     },
@@ -38,10 +49,16 @@ const SearchBox = styled(TextField)(({ theme }) => ({
   }
 }))
 
-const Buttons = styled(Button)({
+const Buttons = styled(Button)(({theme}) => ({
   border: '1px solid',
-  borderColor: ''
-})
+  borderColor: theme.palette.neutral.main,
+  height: '100%', 
+  minWidth: '40px',
+  borderRadius: 10,
+  '&:hover': {
+    borderColor: theme.palette.neutral.main
+  }
+}))
 
 
 function Welcome() {
@@ -58,8 +75,8 @@ function Welcome() {
           }}
            fullWidth placeholder='Search for a product or cate...' sx={{height: '48px', }} />
         </Stack>
-          <Stack direction={'row'} gap={4} height={'40px'} width={'100%'}>
-            <Buttons variant='outlined' sx={{height: '100%', minWidth: '40px',}}></Buttons>
+          <Stack direction={'row'} gap={4} height={'50px'} width={'100%'}>
+            <Buttons variant='outlined' sx={{aspectRatio: '1/1'}}><FontAwesomeIcon color='' size='2x' icon={faSliders} /></Buttons>
           </Stack>
       </Box>
     </>
