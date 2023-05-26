@@ -27,10 +27,10 @@ const SearchBox = styled(TextField)(({ theme }) => ({
     fontSize: 16,
     height: 48,
     borderRadius: 10,
-    background: theme.palette.neutral.light,
+    background: theme.palette.secondary.light,
     color: '#939aa7',
     "& fieldset": {
-      borderColor: theme.palette.neutral.main,
+      borderColor: theme.palette.secondary.main,
     },
     "&:hover fieldset": {
       borderColor: theme.palette.primary.main

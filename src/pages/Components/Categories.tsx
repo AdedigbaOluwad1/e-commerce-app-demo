@@ -18,7 +18,7 @@ import 'typeface-dm-sans'
 
 const Buttons = styled(Button)(({theme}) => ({
   border: '1px solid',
-  borderColor: theme.palette.neutral.main,
+  borderColor: theme.palette.secondary.main,
   height: '100%', 
   minWidth: '40px',
   borderRadius: 10,
@@ -29,7 +29,7 @@ const Buttons = styled(Button)(({theme}) => ({
   flexShrink: 0,
   padding: '5px 10px',
   '&:hover': {
-    borderColor: theme.palette.neutral.main
+    borderColor: theme.palette.secondary.main
   }
 }))
 
