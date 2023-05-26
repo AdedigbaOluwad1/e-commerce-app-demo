@@ -32,7 +32,7 @@ function RecentlyViewed() {
                         <Typography fontWeight={600} fontSize={17} color={'#2b3237'}>Macbook Air M1</Typography>
                         <IconButton color='secondary' sx={{borderRadius: '50%', border: '1px solid', p: '5px'}}><FontAwesomeIcon fontSize={'10px'} icon={faHeart} /></IconButton>
                     </Stack>
-                    <Typography fontSize={8} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
+                    <Typography fontSize={11} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
                 </CardContent>
             </Card>
         </Stack>   

@@ -30,7 +30,7 @@ function HotSales() {
                         <Typography fontWeight={600} fontSize={14} color={'#2b3237'}>Macbook Air M1</Typography>
                         <Typography fontSize={14} color={'#2b3237'} fontWeight={500}>$ 150</Typography>
                     </Stack>
-                    <Typography fontSize={10} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
+                    <Typography fontSize={12} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
                 </CardContent>
             </Card>
         </Stack>   
