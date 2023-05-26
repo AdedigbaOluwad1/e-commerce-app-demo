@@ -2,6 +2,7 @@ import Meta from '@/components/Meta';
 import Categories from '../Components/Categories';
 import Search from '../Components/Search';
 import HotSales from '../Components/HotSales';
+import RecentlyViewed from '../Components/Recent';
 import { Box } from '@mui/material';
 import 'typeface-manrope';
 import 'typeface-roboto';
@@ -16,6 +17,7 @@ function Welcome() {
         <Search />
         <Categories />
         <HotSales />
+        <RecentlyViewed />
       </Box>
     </>
   );
