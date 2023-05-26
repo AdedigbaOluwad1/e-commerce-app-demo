@@ -33,6 +33,63 @@ function HotSales() {
                     <Typography fontSize={12} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
                 </CardContent>
             </Card>
+
+            <Card elevation={0} sx={{width: '43%', minWidth: '170px', background: 'transparent'}}>
+                <CardMedia 
+                component="img"
+                src={macbook}
+                sx={{width: '100%',
+                aspectRatio: '1/1',
+                borderRadius: '20px'
+                }}
+
+                />
+                <CardContent sx={{marginTop: 1.5, width: '100%', p: 0}}>
+                    <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+                        <Typography fontWeight={600} fontSize={14} color={'#2b3237'}>Macbook Air M1</Typography>
+                        <Typography fontSize={14} color={'#2b3237'} fontWeight={500}>$ 150</Typography>
+                    </Stack>
+                    <Typography fontSize={12} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
+                </CardContent>
+            </Card>
+
+            <Card elevation={0} sx={{width: '43%', minWidth: '170px', background: 'transparent'}}>
+                <CardMedia 
+                component="img"
+                src={macbook}
+                sx={{width: '100%',
+                aspectRatio: '1/1',
+                borderRadius: '20px'
+                }}
+
+                />
+                <CardContent sx={{marginTop: 1.5, width: '100%', p: 0}}>
+                    <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+                        <Typography fontWeight={600} fontSize={14} color={'#2b3237'}>Macbook Air M1</Typography>
+                        <Typography fontSize={14} color={'#2b3237'} fontWeight={500}>$ 150</Typography>
+                    </Stack>
+                    <Typography fontSize={12} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
+                </CardContent>
+            </Card>
+
+            <Card elevation={0} sx={{width: '43%', minWidth: '170px', background: 'transparent'}}>
+                <CardMedia 
+                component="img"
+                src={macbook}
+                sx={{width: '100%',
+                aspectRatio: '1/1',
+                borderRadius: '20px'
+                }}
+
+                />
+                <CardContent sx={{marginTop: 1.5, width: '100%', p: 0}}>
+                    <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+                        <Typography fontWeight={600} fontSize={14} color={'#2b3237'}>Macbook Air M1</Typography>
+                        <Typography fontSize={14} color={'#2b3237'} fontWeight={500}>$ 150</Typography>
+                    </Stack>
+                    <Typography fontSize={12} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
+                </CardContent>
+            </Card>
         </Stack>   
     </Box>
     

@@ -35,6 +35,63 @@ function RecentlyViewed() {
                     <Typography fontSize={11} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
                 </CardContent>
             </Card>
+
+            <Card elevation={0} sx={{width: '50%', minWidth: '200px', background: '#fff', p: 1.5, borderRadius: '20px'}}>
+                <CardMedia 
+                component="img"
+                src={macbook}
+                sx={{width: '100%',
+                aspectRatio: '1/1',
+                borderRadius: '20px'
+                }}
+
+                />
+                <CardContent sx={{marginTop: 1.5, width: '100%', p: 0}}>
+                    <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+                        <Typography fontWeight={600} fontSize={17} color={'#2b3237'}>Macbook Air M1</Typography>
+                        <IconButton color='secondary' sx={{borderRadius: '50%', border: '1px solid', p: '5px'}}><FontAwesomeIcon fontSize={'10px'} icon={faHeart} /></IconButton>
+                    </Stack>
+                    <Typography fontSize={11} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
+                </CardContent>
+            </Card>
+
+            <Card elevation={0} sx={{width: '50%', minWidth: '200px', background: '#fff', p: 1.5, borderRadius: '20px'}}>
+                <CardMedia 
+                component="img"
+                src={macbook}
+                sx={{width: '100%',
+                aspectRatio: '1/1',
+                borderRadius: '20px'
+                }}
+
+                />
+                <CardContent sx={{marginTop: 1.5, width: '100%', p: 0}}>
+                    <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+                        <Typography fontWeight={600} fontSize={17} color={'#2b3237'}>Macbook Air M1</Typography>
+                        <IconButton color='secondary' sx={{borderRadius: '50%', border: '1px solid', p: '5px'}}><FontAwesomeIcon fontSize={'10px'} icon={faHeart} /></IconButton>
+                    </Stack>
+                    <Typography fontSize={11} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
+                </CardContent>
+            </Card>
+
+            <Card elevation={0} sx={{width: '50%', minWidth: '200px', background: '#fff', p: 1.5, borderRadius: '20px'}}>
+                <CardMedia 
+                component="img"
+                src={macbook}
+                sx={{width: '100%',
+                aspectRatio: '1/1',
+                borderRadius: '20px'
+                }}
+
+                />
+                <CardContent sx={{marginTop: 1.5, width: '100%', p: 0}}>
+                    <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+                        <Typography fontWeight={600} fontSize={17} color={'#2b3237'}>Macbook Air M1</Typography>
+                        <IconButton color='secondary' sx={{borderRadius: '50%', border: '1px solid', p: '5px'}}><FontAwesomeIcon fontSize={'10px'} icon={faHeart} /></IconButton>
+                    </Stack>
+                    <Typography fontSize={11} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
+                </CardContent>
+            </Card>
         </Stack>   
     </Box>
     
