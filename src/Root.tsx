@@ -3,8 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { RecoilRoot } from 'recoil';
 import { ThemeProvider, createTheme } from '@mui/material';
-import { borderColor, spacing } from '@mui/system';
-import { dark, light } from '@mui/material/styles/createPalette';
 import 'typeface-roboto'
 import '@/main.css'
 // import ThemeProvider from '@/theme/Provider';
