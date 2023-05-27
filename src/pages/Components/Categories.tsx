@@ -43,7 +43,7 @@ const ButtonText = styled(Typography)(({theme}) => ({
 
 function Categories() {
   return (
-    <Stack direction={'row'} className='scrollBarHidden' overflow={'auto'} gap={2} height={'52px'} width={'100%'} sx={{overflowY: 'hidden'}}>
+    <Stack direction={'row'} className='scrollBarHidden' overflow={'auto'} gap={2} minHeight={'52px'} width={'100%'} sx={{overflowY: 'hidden'}}>
             <Buttons variant='outlined' sx={{aspectRatio: '1/1', height: '52px'}}><FontAwesomeIcon color='' size='2x' icon={faSliders} /></Buttons>
             <Buttons variant='outlined' sx={{}}><img style={{width: 40, aspectRatio: '1/1', borderRadius: 10}} src={pink} /><ButtonText variant='h6' > Headset </ButtonText></Buttons>
             <Buttons variant='outlined' sx={{}}><img style={{width: 40, aspectRatio: '1/1', borderRadius: 10}} src={pink} /><ButtonText variant='h6' > Headset </ButtonText></Buttons>
