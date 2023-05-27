@@ -12,6 +12,13 @@ const routes: Routes = {
     icon: faHouse,
     link: true,
   },
+  [Pages.Cart]: {
+    component: asyncComponentLoader(() => import('@/pages/Welcome')),
+    path: '/cart',
+    title: 'Home',
+    icon: faHouse,
+    link: true,
+  },
   [Pages.NotFound]: {
     component: asyncComponentLoader(() => import('@/pages/NotFound')),
     path: '*',
