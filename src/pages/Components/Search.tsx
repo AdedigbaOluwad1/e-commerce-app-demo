@@ -25,7 +25,7 @@ const SearchBox = styled(TextField)(({ theme }) => ({
     fontFamily: 'Nunito',
     border: 'none',
     fontSize: 16,
-    height: 48,
+    height: 55,
     borderRadius: 10,
     background: theme.palette.secondary.light,
     color: '#939aa7',
