@@ -44,10 +44,10 @@ function RecentlyViewed() {
                     <Typography fontSize={11} color={'#a9a9a9'} fontWeight={500} variant='body1'>The intuitive and intelligent WH-1000XM4 headphones..</Typography>
                 </CardContent>
                 
-                <CardActions sx={{width: '100%'}}>
+                <CardActions sx={{width: '100%', px: 0}}>
                     <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} width={'100%'}>
                         <Typography variant='h2' fontSize={24} fontWeight={700}>$128</Typography>
-                        <IconButton color='primary' sx={{fontSize: '24px'}}><FontAwesomeIcon icon={faPlusSquare} /></IconButton>
+                        <IconButton color='primary' sx={{fontSize: '24px', p: 0}}><FontAwesomeIcon icon={faPlusSquare} /></IconButton>
                     </Stack>
                     
                 </CardActions>
