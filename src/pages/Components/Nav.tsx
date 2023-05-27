@@ -15,9 +15,9 @@ function Nav() {
   return (
         <AppBar position='fixed' elevation={12} sx={{bottom: 0, top: 'unset', background: 'white'}}>
             <Toolbar>
-                <List sx={{height: '70px'}}>
+                <List sx={{height: '80px'}}>
                     <ListItem sx={{p: 0}}>
-                        <IconButton sx={{display: 'flex', flexDirection: 'column', aspectRatio: '1/1', p: 1, fontSize: '12px'}}>
+                        <IconButton color='primary' sx={{display: 'flex', flexDirection: 'column', aspectRatio: '1/1', p: '10px', fontSize: '10px', gap: '5px'}}>
                             <FontAwesomeIcon fontSize={'16px'} icon={faHouse} /> Home
                         </IconButton>
                         
