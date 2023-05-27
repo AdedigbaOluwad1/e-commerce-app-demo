@@ -1,4 +1,4 @@
-import HomeIcon from '@mui/icons-material/Home';
+import { faHouse} from '@fortawesome/free-solid-svg-icons'
 
 import asyncComponentLoader from '@/utils/loader';
 
@@ -8,12 +8,14 @@ const routes: Routes = {
   [Pages.Welcome]: {
     component: asyncComponentLoader(() => import('@/pages/Welcome')),
     path: '/',
-    title: 'Welcome',
-    icon: HomeIcon,
+    title: 'Home',
+    icon: faHouse,
+    link: true,
   },
   [Pages.NotFound]: {
     component: asyncComponentLoader(() => import('@/pages/NotFound')),
     path: '*',
+    link: false
   },
 };
 

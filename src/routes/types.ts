@@ -11,7 +11,9 @@ enum Pages {
 type PathRouteCustomProps = {
   title?: string;
   component: FC;
-  icon?: FC<SvgIconProps>;
+  path: string;
+  icon?: any;
+  link: boolean
 };
 
 type Routes = Record<Pages, PathRouteProps & PathRouteCustomProps>;
