@@ -4,13 +4,13 @@ import routes from '..';
 
 function Pages() {
   return (
-    <>
+    <div style={{marginBottom: '80px'}}>
       <Routes>
         {Object.values(routes).map(({ path, component: Component }) => {
           return <Route key={path} path={path} element={<Component />} />;
         })}
       </Routes>
-    </>
+    </div>
   );
 }
 
