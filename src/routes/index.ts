@@ -1,4 +1,4 @@
-import { faHouse} from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faCartShopping, faClipboardCheck} from '@fortawesome/free-solid-svg-icons'
 
 import asyncComponentLoader from '@/utils/loader';
 
@@ -15,8 +15,15 @@ const routes: Routes = {
   [Pages.Cart]: {
     component: asyncComponentLoader(() => import('@/pages/Welcome')),
     path: '/cart',
-    title: 'Home',
-    icon: faHouse,
+    title: 'Cart',
+    icon: faCartShopping,
+    link: true,
+  },
+  [Pages.History]: {
+    component: asyncComponentLoader(() => import('@/pages/Welcome')),
+    path: '/history',
+    title: 'History',
+    icon: faClipboardCheck,
     link: true,
   },
   [Pages.NotFound]: {

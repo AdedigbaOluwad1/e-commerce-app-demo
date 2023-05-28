@@ -6,7 +6,8 @@ import type { SvgIconProps } from '@mui/material/SvgIcon';
 enum Pages {
   Welcome = 'Welcome',
   NotFound = 'NotFound',
-  Cart = 'Cart'
+  Cart = 'Cart',
+  History = 'History'
 }
 
 type PathRouteCustomProps = {
