@@ -1,6 +1,6 @@
 import React, { createContext } from "react";
 
-export interface products {
+export interface Product {
     title: string,
     description: string,
     id: number,
@@ -10,8 +10,8 @@ export interface products {
     category: string
 }
  type MyContextValue = {
-    products: products[],
-    setProducts: React.Dispatch<React.SetStateAction<any>>;
+    products: Product[],
+    setProducts: (products: Product[]) => void;
  }
 
 export const MyContext = createContext({} as MyContextValue)

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { MyContext } from '@/MyContext';
+import { MyContext, Product } from '@/MyContext';
 import Meta from '@/components/Meta';
 import Categories from '../Components/Categories';
 import Search from '../Components/Search';
@@ -17,7 +17,7 @@ import 'typeface-dm-sans'
 
 function Welcome() {
   //state to store products
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState<Product[]>([])
   const [loading, isLoading] = useState(true)
 
   const url = 'https://fakestoreapi.com/';
