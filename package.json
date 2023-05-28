@@ -31,6 +31,7 @@
     "@mui/material": "^5.10.6",
     "@mui/system": "^5.10.6",
     "@mui/utils": "^5.10.6",
+    "axios": "^1.4.0",
     "bootstrap-icons": "^1.10.5",
     "is-mobile": "^3.1.1",
     "mui": "^0.0.1",

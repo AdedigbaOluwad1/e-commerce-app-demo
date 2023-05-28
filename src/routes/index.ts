@@ -29,7 +29,8 @@ const routes: Routes = {
   [Pages.NotFound]: {
     component: asyncComponentLoader(() => import('@/pages/NotFound')),
     path: '*',
-    link: false
+    link: false,
+    icon: faClipboardCheck
   },
 };
 
