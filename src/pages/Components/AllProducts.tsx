@@ -8,7 +8,8 @@ import {
     CardActions, 
     Typography, 
     Box, 
-    IconButton
+    IconButton, 
+    Rating
 } from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faPlusSquare } from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +17,6 @@ import 'typeface-nunito'
 import 'typeface-open-sans'
 import 'typeface-dm-sans'
 import 'typeface-manrope'
-import macbook from '@/imgs/photo-1517336714731-489689fd1ca8.jpg'
 
 function AllProducts() {
     const {products, setProducts} = useContext(MyContext);
@@ -47,6 +47,7 @@ function AllProducts() {
 
                         />
                         <CardContent sx={{marginTop: 1.5, width: '100%', pt: 1, px:2}}>
+                            <Rating value={eachProduct.rating.rate} size='medium' readOnly/>
                             <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
                                 <Typography fontWeight={600} fontSize={17} color={'#2b3237'}>{formatTitle}</Typography>
                                 <IconButton color='secondary' sx={{borderRadius: '50%', border: '1px solid', p: '5px'}}><FontAwesomeIcon fontSize={'10px'} icon={faHeart} /></IconButton>

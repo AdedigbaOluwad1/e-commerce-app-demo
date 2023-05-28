@@ -6,7 +6,10 @@ export interface Product {
     id: number,
     image: string,
     price: number,
-    rating: object,
+    rating: {
+        rate: number,
+        count: number
+    },
     category: string
 }
  type MyContextValue = {
