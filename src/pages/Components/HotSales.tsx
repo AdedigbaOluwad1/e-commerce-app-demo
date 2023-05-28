@@ -7,7 +7,7 @@ import 'typeface-dm-sans'
 import 'typeface-manrope'
 
 function HotSales() {
-    const { products, setProducts } = useContext(MyContext)
+    const { products, setProducts } = useContext(MyContext);
     const titleLength = 12;
     const descLength = 45;
     const filterProducts = products.filter((newProduct: any) => newProduct.id <= 5);
