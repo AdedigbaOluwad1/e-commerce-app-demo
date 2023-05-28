@@ -48,7 +48,7 @@ function AllProducts() {
                         />
                         <CardContent sx={{marginTop: 1.5, width: '100%', pt: 1, px:2}}>
                             <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} sx={{pb: '5px'}}>
-                                <Rating value={eachProduct.rating.rate} size='medium' readOnly/>
+                                <Rating value={eachProduct.rating.rate} size='small' readOnly/>
                                 <Typography fontFamily={'manrope'} fontWeight={600} fontSize={12}>{eachProduct.rating.count} reviews</Typography>
                             </Stack>
                             
