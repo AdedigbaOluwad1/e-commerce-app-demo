@@ -58,7 +58,7 @@ function Welcome() {
             <Search />
             <Categories />
             <HotSales />
-            <RecentlyViewed />
+            {/* <RecentlyViewed /> */}
             <AllProducts />
           </Box>
         </MyContext.Provider>
