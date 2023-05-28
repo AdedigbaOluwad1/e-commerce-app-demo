@@ -43,7 +43,7 @@ function Welcome() {
   
   if (loading) {
     return(
-      <Box sx={{display: 'flex', width: '100%', height: '100vh', justifyContent: 'center', alignItems: 'center', mb: '80px'}}>
+      <Box sx={{display: 'flex', width: '100%', height: 'calc(100vh - 80px)', justifyContent: 'center', alignItems: 'center',}}>
         <Meta title="Home" />
         <CircularProgress />
       </Box>
