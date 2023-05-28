@@ -25,7 +25,7 @@ const SearchBox = styled(TextField)(({ theme }) => ({
     fontFamily: 'Nunito',
     border: 'none',
     fontSize: 16,
-    height: 55,
+    height: 52,
     borderRadius: 10,
     background: theme.palette.secondary.light,
     color: '#939aa7',
@@ -44,12 +44,12 @@ const SearchBox = styled(TextField)(({ theme }) => ({
 
 function Search() {
   return (
-    <Stack direction={'row'} alignItems={'center'} spacing={1} width={'100%'}>
-          <IconButton size='small' disableRipple sx={{width: '35px', height: '48px', p: 0, background: '#fff', borderRadius: '10px'}}>
+    <Stack direction={'row'} alignItems={'stretch'} spacing={1} width={'100%'}>
+          <IconButton size='small' disableRipple sx={{height: '52px', aspectRatio: '1/1', p: 0, background: '#fff', borderRadius: '10px'}}>
             <FontAwesomeIcon size="1x" color='black' icon={faChevronLeft} />
           </IconButton>
           <SearchBox variant='outlined' InputProps={{
-            endAdornment: <InputAdornment position='end'><IconButton disableRipple sx={{p: 0}}><FontAwesomeIcon icon={faMagnifyingGlass} /></IconButton></InputAdornment>
+            endAdornment: <InputAdornment position='end'><IconButton disableRipple sx={{p: 0}}><FontAwesomeIcon fontSize={'16px'} icon={faMagnifyingGlass} /></IconButton></InputAdornment>
           }}
            fullWidth placeholder='Search for a product or cate...' sx={{height: '48px', }} />
         </Stack>
