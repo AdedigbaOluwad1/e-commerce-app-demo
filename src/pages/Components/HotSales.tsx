@@ -10,7 +10,7 @@ function HotSales() {
     const { products, setProducts } = useContext(MyContext);
     const titleLength = 12;
     const descLength = 45;
-    const filterProducts = products.filter((newProduct: any) => newProduct.id <= 5);
+    const filterProducts = products.filter((newProduct: any) => newProduct.rating.rate >= 4.3);
     const HotSalesProduct = filterProducts.map((eachProduct: any) => {
         
         const truncatedTitleText = eachProduct.title.length > titleLength ? `${eachProduct.title.substring(0, titleLength)}...` : eachProduct.title;
