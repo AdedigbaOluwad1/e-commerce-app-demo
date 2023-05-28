@@ -6,6 +6,7 @@ import Search from '../Components/Search';
 import HotSales from '../Components/HotSales';
 import RecentlyViewed from '../Components/Recent';
 import axios from 'axios';
+import AllProducts from '../Components/AllProducts';
 import { Box, Typography, CircularProgress } from '@mui/material';
 import 'typeface-manrope';
 import 'typeface-roboto';
@@ -52,11 +53,12 @@ function Welcome() {
       <>
         <Meta title="Home" />
         <MyContext.Provider value={{ products, setProducts}} >
-          <Box display={'flex'} flexDirection={'column'} gap={3} sx={{background: '#fcfcfc'}} alignItems={'center'} py={3} px={3}>
+          <Box display={'flex'} flexDirection={'column'} gap={3} sx={{background: '#fafafa'}} alignItems={'center'} py={3} px={3}>
             <Search />
             <Categories />
             <HotSales />
             <RecentlyViewed />
+            <AllProducts />
           </Box>
         </MyContext.Provider>
         
