@@ -17,11 +17,11 @@ function AppBar(props: Props) {
     }
   return (
     <Box sx={{width: '100%'}}>
-        <Stack direction={'row'} sx={{px: 3, borderBottom: '1px solid #eeeeee'}} justifyContent={'space-between'} alignItems={'center'} height={70}>
+        <Stack direction={'row'} sx={{px: 3, borderBottom: '1px solid #eeeeee'}} justifyContent={'space-between'} alignItems={'center'} height={65}>
             <IconButton disableRipple onClick={handleGoBack}>
                 <FontAwesomeIcon fontSize={'16px'} icon={faChevronLeft} color='#000'/>
             </IconButton>
-            <Typography variant='h3' fontSize={18} fontFamily={'lato'} fontWeight={600}>
+            <Typography variant='h3' fontSize={16} fontFamily={'lato'} fontWeight={600}>
                 {props.appBarText}
             </Typography>
             <IconButton disableRipple>
