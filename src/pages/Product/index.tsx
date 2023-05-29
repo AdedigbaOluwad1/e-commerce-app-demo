@@ -1,3 +1,3 @@
-import Product from "./Product";
+import SelectedProduct from "./Product";
 
-export default Product;
+export default SelectedProduct;

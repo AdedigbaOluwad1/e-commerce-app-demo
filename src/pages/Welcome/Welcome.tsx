@@ -4,10 +4,10 @@ import Meta from '@/components/Meta';
 import Categories from '../Components/Categories';
 import Search from '../Components/Search';
 import HotSales from '../Components/HotSales';
-import RecentlyViewed from '../Components/Recent';
+// import RecentlyViewed from '../Components/Recent';
 import axios from 'axios';
 import AllProducts from '../Components/AllProducts';
-import { Box, Typography, CircularProgress } from '@mui/material';
+import { Box, CircularProgress } from '@mui/material';
 import 'typeface-manrope';
 import 'typeface-roboto';
 import 'typeface-open-sans';
@@ -58,7 +58,6 @@ function Welcome() {
             <Search />
             <Categories />
             <HotSales />
-            {/* <RecentlyViewed /> */}
             <AllProducts />
           </Box>
         </MyContext.Provider>
