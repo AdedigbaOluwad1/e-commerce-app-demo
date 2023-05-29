@@ -10,9 +10,12 @@ import {
     IconButton
 } from '@mui/material'
 
-
-function Nav() {
-  return (
+interface props {
+    showNav: boolean
+}
+function Nav(props: props) {
+    if (props.showNav) {
+       return (
         <AppBar position='fixed' elevation={12} sx={{bottom: 0, top: 'unset', background: 'white'}}>
             <Toolbar sx={{width: '100%'}}>
                 <List sx={{height: '80px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', px: '30px'}}>
@@ -28,7 +31,11 @@ function Nav() {
                 </List>
             </Toolbar>
         </AppBar>
-  )
+    )}else {
+        return (
+            null
+        )
+    }
 }
 
 export default Nav

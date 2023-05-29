@@ -23,15 +23,17 @@ import AppBar from '../Components/AppBar';
 import { Product } from '@/MyContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { AppBarContext } from '@/App';
 
 function SelectedProduct() {
     const [products, setProducts] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const url = 'https://fakestoreapi.com/products'
-
+    const {showNav, setShowNav} = useContext(AppBarContext);
     useEffect(() => {
         getProducts();
-    }, [])
+        setShowNav(false);
+    }, [setShowNav])
 
     const getProducts = () => {
         axios.get(url)
@@ -88,7 +90,7 @@ function SelectedProduct() {
         )
     }   
     else return (
-        <Box sx={{display: 'flex', width: '100%', height: 'calc(100vh - 80px)', justifyContent: 'center', alignItems: 'center',}}>
+        <Box sx={{display: 'flex', width: '100%', height: 'calc(100vh)', justifyContent: 'center', alignItems: 'center'}}>
             <Meta title="Home" />
             <CircularProgress />
         </Box>

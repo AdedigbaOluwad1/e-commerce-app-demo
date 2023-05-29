@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { MyContext, Product } from '@/MyContext';
 import Meta from '@/components/Meta';
 import Categories from '../Components/Categories';
@@ -13,6 +13,7 @@ import 'typeface-roboto';
 import 'typeface-open-sans';
 import 'typeface-nunito';
 import 'typeface-dm-sans'
+import { AppBarContext } from '@/App';
 
 
 
@@ -22,10 +23,11 @@ function Welcome() {
   const [loading, isLoading] = useState(true)
 
   const url = 'https://fakestoreapi.com/';
-
+  const {showNav, setShowNav} = useContext(AppBarContext)
   useEffect(() => {
       fetchAllProducts();
-    }, []);
+      setShowNav(true)
+    }, [setShowNav]);
 
   const fetchAllProducts = () => {
     axios.get(`${url}products`)
