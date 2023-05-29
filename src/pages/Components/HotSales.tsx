@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { MyContext } from '@/MyContext'
+import { Link } from 'react-router-dom'
 import { Stack, Card, CardMedia, CardContent, Typography, Box } from '@mui/material'
 import 'typeface-nunito'
 import 'typeface-open-sans'
@@ -16,24 +17,27 @@ function HotSales() {
         const truncatedTitleText = eachProduct.title.length > titleLength ? `${eachProduct.title.substring(0, titleLength)}...` : eachProduct.title;
         const truncatedDescText = eachProduct.description.length > descLength ? `${eachProduct.description.substring(0, descLength)}...` : eachProduct.title;
         return(
-            <Card elevation={0} key={eachProduct.id} sx={{width: '43%', minWidth: '170px', background: 'transparent'}}>
-                <CardMedia 
-                component="img"
-                src={eachProduct.image}
-                sx={{width: '100%',
-                aspectRatio: '1/1',
-                borderRadius: '20px'
-                }}
+            <Link key={eachProduct.id} to={`/product/${eachProduct.id}`}>
+                <Card elevation={0}  sx={{width: '43%', minWidth: '170px', background: 'transparent'}}>
+                    <CardMedia 
+                    component="img"
+                    src={eachProduct.image}
+                    sx={{width: '100%',
+                    aspectRatio: '1/1',
+                    borderRadius: '20px'
+                    }}
 
-                />
-                <CardContent sx={{marginTop: 1.5, width: '100%', p: 0}}>
-                    <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
-                        <Typography fontWeight={600} fontSize={14} color={'#2b3237'}>{truncatedTitleText}</Typography>
-                        <Typography fontSize={14} color={'#2b3237'} fontWeight={500}>{`$ ${eachProduct.price}`}</Typography>
-                    </Stack>
-                    <Typography fontSize={12} color={'#a9a9a9'} fontWeight={500} variant='body1'>{truncatedDescText}</Typography>
-                </CardContent>
-            </Card>
+                    />
+                    <CardContent sx={{marginTop: 1.5, width: '100%', p: 0}}>
+                        <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+                            <Typography fontWeight={600} fontSize={14} color={'#2b3237'}>{truncatedTitleText}</Typography>
+                            <Typography fontSize={14} color={'#2b3237'} fontWeight={500}>{`$ ${eachProduct.price}`}</Typography>
+                        </Stack>
+                        <Typography fontSize={12} color={'#a9a9a9'} fontWeight={500} variant='body1'>{truncatedDescText}</Typography>
+                    </CardContent>
+                </Card>
+            </Link>
+            
         )
     })
   return (

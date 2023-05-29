@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { MyContext } from '@/MyContext'
+import { Link } from 'react-router-dom'
 import { 
     Stack, 
     Card, 
@@ -36,37 +37,40 @@ function AllProducts() {
                 const formatDesc = eachProduct.description.length > descLength ? `${eachProduct.description.substring(0, descLength)}...` : eachProduct.description;
 
                 return(
-                    <Card key={eachProduct.id} elevation={0} sx={{width: '100%', background: '#fff', pb: 2, borderRadius: '20px'}}>
-                        <CardMedia 
-                        component="img"
-                        src={eachProduct.image}
-                        sx={{width: '100%',
-                        aspectRatio: '1/0.6',
-                        borderRadius: '20px 20px 0 0'
-                        }}
+                    <Link key={eachProduct.id} to={`/product/${eachProduct.id}`}>
+                        <Card  elevation={0} sx={{width: '100%', background: '#fff', pb: 2, borderRadius: '20px'}}>
+                            <CardMedia 
+                            component="img"
+                            src={eachProduct.image}
+                            sx={{width: '100%',
+                            aspectRatio: '1/0.6',
+                            borderRadius: '20px 20px 0 0'
+                            }}
 
-                        />
-                        <CardContent sx={{marginTop: 1.5, width: '100%', pt: 1, px:2}}>
-                            <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} sx={{pb: '5px'}}>
-                                <Rating value={eachProduct.rating.rate} size='small' readOnly/>
-                                <Typography fontFamily={'manrope'} fontWeight={600} fontSize={12}>{eachProduct.rating.count} reviews</Typography>
-                            </Stack>
-                            
-                            <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
-                                <Typography fontWeight={600} fontSize={17} color={'#2b3237'}>{formatTitle}</Typography>
-                                <IconButton color='secondary' sx={{borderRadius: '50%', border: '1px solid', p: '5px'}}><FontAwesomeIcon fontSize={'10px'} icon={faHeart} /></IconButton>
-                            </Stack>
-                            <Typography fontSize={14} color={'#a9a9a9'} fontWeight={500} variant='body1'>{formatDesc}</Typography>
-                        </CardContent>
-                
-                        <CardActions sx={{width: '100%', px: 2}}>
-                            <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} width={'100%'}>
-                                <Typography variant='h2' fontSize={24} fontWeight={700}>$128</Typography>
-                                <IconButton color='primary' sx={{fontSize: '24px', p: 0}}><FontAwesomeIcon icon={faPlusSquare} /></IconButton>
-                            </Stack>
-                            
-                        </CardActions>
-                    </Card>
+                            />
+                            <CardContent sx={{marginTop: 1.5, width: '100%', pt: 1, px:2}}>
+                                <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} sx={{pb: '5px'}}>
+                                    <Rating value={eachProduct.rating.rate} size='small' readOnly/>
+                                    <Typography fontFamily={'manrope'} fontWeight={600} fontSize={12}>{eachProduct.rating.count} reviews</Typography>
+                                </Stack>
+                                
+                                <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+                                    <Typography fontWeight={600} fontSize={17} color={'#2b3237'}>{formatTitle}</Typography>
+                                    <IconButton color='secondary' sx={{borderRadius: '50%', border: '1px solid', p: '5px'}}><FontAwesomeIcon fontSize={'10px'} icon={faHeart} /></IconButton>
+                                </Stack>
+                                <Typography fontSize={14} color={'#a9a9a9'} fontWeight={500} variant='body1'>{formatDesc}</Typography>
+                            </CardContent>
+                    
+                            <CardActions sx={{width: '100%', px: 2}}>
+                                <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} width={'100%'}>
+                                    <Typography variant='h2' fontSize={24} fontWeight={700}>$128</Typography>
+                                    <IconButton color='primary' sx={{fontSize: '24px', p: 0}}><FontAwesomeIcon icon={faPlusSquare} /></IconButton>
+                                </Stack>
+                                
+                            </CardActions>
+                        </Card>
+                    </Link>
+                    
                 )
             })}
         </Stack>   
