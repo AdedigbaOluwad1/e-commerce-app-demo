@@ -32,6 +32,12 @@ const routes: Routes = {
     link: false,
     icon: faClipboardCheck
   },
+  [Pages.Product]: {
+    component: asyncComponentLoader(() => import('@/pages/Product')),
+    path: '/product/:id',
+    link: false,
+    icon: faClipboardCheck
+  },
 };
 
 export default routes;

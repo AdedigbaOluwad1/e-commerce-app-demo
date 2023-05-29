@@ -5,7 +5,8 @@ enum Pages {
   Welcome = 'Welcome',
   NotFound = 'NotFound',
   Cart = 'Cart',
-  History = 'History'
+  History = 'History',
+  Product = 'Product'
 }
 
 type PathRouteCustomProps = {
