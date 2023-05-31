@@ -9,7 +9,7 @@ interface Props {
     appBarText: string
 }
 
-function AppBar(props: Props) {
+function Header(props: Props) {
     const back = useNavigate();
 
     const handleGoBack = () => {
@@ -32,4 +32,4 @@ function AppBar(props: Props) {
   )
 }
 
-export default AppBar
+export default Header
