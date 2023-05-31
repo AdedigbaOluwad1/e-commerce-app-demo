@@ -45,7 +45,7 @@ import { height } from '@mui/system';
         '& fieldset': {
             border: `1px solid ${theme.palette.secondary.main}`,
             borderRadius: 8,
-            fontSize: 14,
+            fontSize: 12,
             fontWeight: 'bold',
         },
         '&:hover fieldset': {
@@ -119,7 +119,7 @@ function SelectedProduct() {
                             fontFamily: 'manrope',
                         }} InputProps={{
                             endAdornment: <InputAdornment position='end' sx={{gap: 0.5, color: '#38c6a5'}}>
-                                <Typography fontFamily={'lato'} fontWeight={500}>
+                                <Typography fontSize={12} fontFamily={'lato'} fontWeight={500}>
                                     Available
                                 </Typography>
                                 <FontAwesomeIcon icon={faCheckCircle} />
@@ -202,7 +202,7 @@ function SelectedProduct() {
                             </Stack>
                             <Button variant='contained' disableElevation sx={{
                                 borderRadius: '10px',
-                                height: 45,
+                                height: 50,
                                 width: '50%',
                                 textTransform: 'none',
                                 color: 'white',
