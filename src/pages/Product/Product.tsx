@@ -39,7 +39,7 @@ import { height } from '@mui/system';
 
   const TextBox = styled(TextField)(({theme}) => ({
     '& .MuiOutlinedInput-root': {
-        height: '48px',
+        height: '50px',
         fontFamily: 'lato',
         color: 'black',
         '& fieldset': {
